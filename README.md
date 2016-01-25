@@ -1,15 +1,15 @@
 # r-lint
-[![wercker status](https://app.wercker.com/status/afe1356d3192d53bbeff7e1f0e0b6bee/s "wercker status")](https://app.wercker.com/project/bykey/afe1356d3192d53bbeff7e1f0e0b6bee)
+[![wercker status](https://app.wercker.com/status/a15133b876c59eb95934428ba9e0318c/m "wercker status")](https://app.wercker.com/project/bykey/a15133b876c59eb95934428ba9e0318c)
 
-A step to generate coverage on an R package.  Best used with one of the
-[rocker](https://registry.hub.docker.com/repos/rocker/) images.  Uploads the
+A step to generate coverage on an R package.  Forked from [Jim Hester](https://github.com/jimhester/wercker-step-r-coverage).  Best used with one of the
+[inbobmk](https://hub.docker.com/u/inbobmk/) images.  Uploads the
 coverage results to codecov.io.
 
 In order for this to work you need to set a protected environment variable
 `CODECOV_TOKEN` in your wercker project settings.
 
 ```yaml
-    - jimhester/r-codecov
+    - inbobmk/r-codecov
 ```
 
 # License
@@ -36,6 +36,9 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.4
+- assume that the `covr` package is allready installed
 
 ## 0.0.3
 - Use run_script function
