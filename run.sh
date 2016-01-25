@@ -10,10 +10,6 @@ run_script () {
 }
 
 run_script <<END
-if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools")
-}
-devtools::install_github("jimhester/covr")
 covr::codecov($WERCKER_R_COVR_OPTIONS)
 END
 
