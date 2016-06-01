@@ -10,7 +10,7 @@ run_script () {
 }
 
 run_script <<END
-covr::codecov($WERCKER_R_COVR_OPTIONS)
+covr::codecov(quiet = FALSE, $WERCKER_R_COVR_OPTIONS)
 END
 
 success "Coverage successfull!"
