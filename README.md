@@ -37,6 +37,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.6
+
+- use R CMD BATCH instead of Rscript
+
 ## 0.0.5
 - don't silence codecov()
 
